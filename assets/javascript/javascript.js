@@ -27,7 +27,11 @@ console.log('ready!');
 
   $(document).on('click', '.p2', function(){
 
-
+  	event.preventDefault();
+  	console.log("anything?");
+  	console.log($(this));
+  	var p2pick = $(this).attr('id');
+  	console.log(p2pick);
 
   });
 
