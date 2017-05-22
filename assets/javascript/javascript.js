@@ -10,8 +10,26 @@ console.log('ready!');
     storageBucket: "rps-multiplayer-c433d.appspot.com",
     messagingSenderId: "246513056808"
   };
+
+
   firebase.initializeApp(config);
 
+  $(document).on('click', '.p1', function(){
+
+  	event.preventDefault();
+  	console.log("anything?");
+  	console.log($(this));
+  	var p1pick = $(this).attr('id');
+  	console.log(p1pick);
+
+  });
+
+
+  $(document).on('click', '.p2', function(){
+
+
+
+  });
 
 
 })
